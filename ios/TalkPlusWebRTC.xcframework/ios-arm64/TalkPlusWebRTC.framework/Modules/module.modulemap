@@ -1,0 +1,5 @@
+framework module TalkPlusWebRTC {
+    umbrella header "frmTalkPlusWebRTC.h"
+    export *
+    module * { export * }
+}

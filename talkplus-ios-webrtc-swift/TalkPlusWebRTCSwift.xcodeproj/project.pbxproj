@@ -1,0 +1,404 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		27D3828F2BDF8DB0001F6105 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D3828E2BDF8DB0001F6105 /* AppDelegate.swift */; };
+		27D382912BDF8DB0001F6105 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D382902BDF8DB0001F6105 /* SceneDelegate.swift */; };
+		27D382962BDF8DB0001F6105 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 27D382952BDF8DB0001F6105 /* Base */; };
+		27D382982BDF8DB1001F6105 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27D382972BDF8DB1001F6105 /* Assets.xcassets */; };
+		27D3829B2BDF8DB1001F6105 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 27D3829A2BDF8DB1001F6105 /* Base */; };
+		27D382A42BDF9309001F6105 /* TalkPlus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27D382A32BDF9309001F6105 /* TalkPlus.framework */; };
+		27D382A82BDF9317001F6105 /* TalkPlusWebRTC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27D382A72BDF9317001F6105 /* TalkPlusWebRTC.framework */; };
+		27D382AC2BDF94EE001F6105 /* CXCallManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D382AB2BDF94EE001F6105 /* CXCallManager.swift */; };
+		27D382B02BDF98A0001F6105 /* VideoCallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D382AF2BDF98A0001F6105 /* VideoCallViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		27D3828B2BDF8DB0001F6105 /* TalkPlusWebRTCSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TalkPlusWebRTCSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		27D3828E2BDF8DB0001F6105 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		27D382902BDF8DB0001F6105 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		27D382952BDF8DB0001F6105 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		27D382972BDF8DB1001F6105 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		27D3829A2BDF8DB1001F6105 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		27D3829C2BDF8DB1001F6105 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27D382A22BDF925C001F6105 /* TalkPlusWebRTCSwift.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TalkPlusWebRTCSwift.entitlements; sourceTree = "<group>"; };
+		27D382A32BDF9309001F6105 /* TalkPlus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TalkPlus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		27D382A72BDF9317001F6105 /* TalkPlusWebRTC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TalkPlusWebRTC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		27D382AB2BDF94EE001F6105 /* CXCallManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CXCallManager.swift; sourceTree = "<group>"; };
+		27D382AF2BDF98A0001F6105 /* VideoCallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCallViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		27D382882BDF8DB0001F6105 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27D382A42BDF9309001F6105 /* TalkPlus.framework in Frameworks */,
+				27D382A82BDF9317001F6105 /* TalkPlusWebRTC.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		27D382822BDF8DB0001F6105 = {
+			isa = PBXGroup;
+			children = (
+				27D3828D2BDF8DB0001F6105 /* TalkPlusWebRTCSwift */,
+				27D3828C2BDF8DB0001F6105 /* Products */,
+				51FB0CB3C09F17AC96100A36 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		27D3828C2BDF8DB0001F6105 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				27D3828B2BDF8DB0001F6105 /* TalkPlusWebRTCSwift.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		27D3828D2BDF8DB0001F6105 /* TalkPlusWebRTCSwift */ = {
+			isa = PBXGroup;
+			children = (
+				27D382A22BDF925C001F6105 /* TalkPlusWebRTCSwift.entitlements */,
+				27D3828E2BDF8DB0001F6105 /* AppDelegate.swift */,
+				27D382902BDF8DB0001F6105 /* SceneDelegate.swift */,
+				27D382AF2BDF98A0001F6105 /* VideoCallViewController.swift */,
+				27D382AB2BDF94EE001F6105 /* CXCallManager.swift */,
+				27D382942BDF8DB0001F6105 /* Main.storyboard */,
+				27D382972BDF8DB1001F6105 /* Assets.xcassets */,
+				27D382992BDF8DB1001F6105 /* LaunchScreen.storyboard */,
+				27D3829C2BDF8DB1001F6105 /* Info.plist */,
+			);
+			path = TalkPlusWebRTCSwift;
+			sourceTree = "<group>";
+		};
+		51FB0CB3C09F17AC96100A36 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				27D382A72BDF9317001F6105 /* TalkPlusWebRTC.framework */,
+				27D382A32BDF9309001F6105 /* TalkPlus.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		27D3828A2BDF8DB0001F6105 /* TalkPlusWebRTCSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27D3829F2BDF8DB1001F6105 /* Build configuration list for PBXNativeTarget "TalkPlusWebRTCSwift" */;
+			buildPhases = (
+				27D382872BDF8DB0001F6105 /* Sources */,
+				27D382882BDF8DB0001F6105 /* Frameworks */,
+				27D382892BDF8DB0001F6105 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TalkPlusWebRTCSwift;
+			productName = TalkPlusWebRTCSwift;
+			productReference = 27D3828B2BDF8DB0001F6105 /* TalkPlusWebRTCSwift.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		27D382832BDF8DB0001F6105 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					27D3828A2BDF8DB0001F6105 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+				};
+			};
+			buildConfigurationList = 27D382862BDF8DB0001F6105 /* Build configuration list for PBXProject "TalkPlusWebRTCSwift" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 27D382822BDF8DB0001F6105;
+			productRefGroup = 27D3828C2BDF8DB0001F6105 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				27D3828A2BDF8DB0001F6105 /* TalkPlusWebRTCSwift */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		27D382892BDF8DB0001F6105 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27D382982BDF8DB1001F6105 /* Assets.xcassets in Resources */,
+				27D3829B2BDF8DB1001F6105 /* Base in Resources */,
+				27D382962BDF8DB0001F6105 /* Base in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		27D382872BDF8DB0001F6105 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27D382AC2BDF94EE001F6105 /* CXCallManager.swift in Sources */,
+				27D382B02BDF98A0001F6105 /* VideoCallViewController.swift in Sources */,
+				27D3828F2BDF8DB0001F6105 /* AppDelegate.swift in Sources */,
+				27D382912BDF8DB0001F6105 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		27D382942BDF8DB0001F6105 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				27D382952BDF8DB0001F6105 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		27D382992BDF8DB1001F6105 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				27D3829A2BDF8DB1001F6105 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		27D3829D2BDF8DB1001F6105 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		27D3829E2BDF8DB1001F6105 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		27D382A02BDF8DB1001F6105 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TalkPlusWebRTCSwift/TalkPlusWebRTCSwift.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6V6UAGM9A4;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TalkPlusWebRTCSwift/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "TalkPlusWebRTCSwift Requires camera access in order to capture and transmit video";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "TalkPlusWebRTCSwift Requires microphone access in order to capture and transmit audio";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.neptunez.videocall;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		27D382A12BDF8DB1001F6105 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TalkPlusWebRTCSwift/TalkPlusWebRTCSwift.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6V6UAGM9A4;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TalkPlusWebRTCSwift/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "TalkPlusWebRTCSwift Requires camera access in order to capture and transmit video";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "TalkPlusWebRTCSwift Requires microphone access in order to capture and transmit audio";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.neptunez.videocall;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		27D382862BDF8DB0001F6105 /* Build configuration list for PBXProject "TalkPlusWebRTCSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27D3829D2BDF8DB1001F6105 /* Debug */,
+				27D3829E2BDF8DB1001F6105 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		27D3829F2BDF8DB1001F6105 /* Build configuration list for PBXNativeTarget "TalkPlusWebRTCSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27D382A02BDF8DB1001F6105 /* Debug */,
+				27D382A12BDF8DB1001F6105 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 27D382832BDF8DB0001F6105 /* Project object */;
+}
