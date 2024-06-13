@@ -12,8 +12,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool
     {
-        //TalkPlus.sharedInstance().initWithAppId("YOUR_APP_ID")
-        TalkPlus.sharedInstance().initWithAppId("c45d29fe-7ee9-41cd-9499-8066e54c845c")
+        TalkPlus.sharedInstance().initWithAppId("YOUR_APP_ID")
         talkPlusLogin()
         return true
     }
