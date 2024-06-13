@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = "talkplus-webrtc-ios"
-  s.version = "0.6.0"
+  s.version = "0.6.1"
   s.summary = "WebRTC SDK for TalkPlus"
   s.license = {
     :type => 'MIT',
@@ -12,6 +12,6 @@ Pod::Spec.new do |s|
   s.source = { :git => 'https://github.com/neptunez-dev/talkplus-webrtc-ios-release.git', :tag => s.version.to_s }
   s.ios.deployment_target = '12.0'
   s.ios.vendored_framework = 'ios/TalkPlusWebRTC.xcframework'
-  s.dependency 'talkplus-ios', '0.6.0' 
+  s.dependency 'talkplus-ios', '0.6.2' 
   s.dependency 'WebRTC-lib', '123.0.0'
 end
