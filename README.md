@@ -4,7 +4,7 @@
 ![Platform](https://img.shields.io/badge/platform-iOS-orange.svg)
 ![Languages](https://img.shields.io/badge/language-Swift-orange.svg)
 ![Languages](https://img.shields.io/badge/language-objc-orange.svg)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/sendbird/quickstart-calls-ios/blob/develop/LICENSE.md)
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
 ## talkplus-webrtc-ios SDK 소개
 
