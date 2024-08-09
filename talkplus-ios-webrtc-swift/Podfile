@@ -6,7 +6,7 @@ target 'TalkPlusWebRTCSwift' do
   use_frameworks!
 
   # Pods for TalkPlusWebRTCSwift
-  pod 'talkplus-webrtc-ios', '0.6.1'
+  pod 'talkplus-webrtc-ios', '0.6.2'
 end
 
 post_install do |installer|
