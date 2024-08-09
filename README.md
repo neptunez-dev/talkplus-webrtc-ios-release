@@ -24,8 +24,16 @@ talkplus-webrtc-ios SDK 사용을 위한 최소 요구사항
 
 ## SDK 설치 
 
-talkplus-webrtc-ios SDK는 [CocoaPods](https://cocoapods.org)를 통해서 설치할 수 있습니다.
+talkplus-webrtc-ios SDK는 [CocoaPods](https://cocoapods.org) 또는 [Swift Package Manager](https://swift.org/package-manager/)를 사용하여 설치할 수 있습니다.
 
+### Swift Package Manager
+>1) Xcode에서 아래 메뉴를 클릭합니다.
+   Xcode - File -> Add Package Dependencies...
+>2) 우측 상단 패키지 URL에 아래 저장소 URL를 입력합니다.
+   https://github.com/neptunez-dev/talkplus-webrtc-ios-release.git
+>3) 사용하려는 버전을 선택하고 "Add Package" 버튼을 클릭하여 SDK 설치를 완료합니다.
+
+### Cocoapods
 ```ruby
 pod 'talkplus-webrtc-ios'
 ```
