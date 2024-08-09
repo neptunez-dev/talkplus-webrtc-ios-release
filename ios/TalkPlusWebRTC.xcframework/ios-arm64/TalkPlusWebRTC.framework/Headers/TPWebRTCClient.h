@@ -20,7 +20,7 @@
 #import <TalkPlusWebRTC/TalkPlusCall.h>
 #import <TalkPlusWebRTC/TalkPlusCallParams.h>
 
-#define TALKPLUS_WEBRTC_SDK_VERSION @"0.6.0"
+#define TALKPLUS_WEBRTC_SDK_VERSION @"0.6.2"
 
 @protocol TPWebRTCClientDelegate <NSObject>
 @required

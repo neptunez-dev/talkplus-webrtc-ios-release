@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/TPWebRTCClient.h</key>
 		<data>
-		HJqRKZNbcoQF82zDHtlFhPv/xJE=
+		wy0kg5iu8fpuYgkh3/fz8kPJVLg=
 		</data>
 		<key>Headers/TalkPlusCall.h</key>
 		<data>
@@ -22,7 +22,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		wiqKxUq4Rx4uY+hIRAGeqFh6zRM=
+		Xocq7Qj64aQYfk2f6pURPkt2RLw=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -39,11 +39,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			HJqRKZNbcoQF82zDHtlFhPv/xJE=
+			wy0kg5iu8fpuYgkh3/fz8kPJVLg=
 			</data>
 			<key>hash2</key>
 			<data>
-			TbJPNPSkEtvbl3BjfrNhtDKj7+m2Llr50iOFqnRfgNI=
+			UJdLooPHHC774WDU85lYW8jpvTxtfgm3ARCHfCT7I80=
 			</data>
 		</dict>
 		<key>Headers/TalkPlusCall.h</key>
