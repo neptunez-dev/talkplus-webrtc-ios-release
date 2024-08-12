@@ -3,6 +3,7 @@ import TalkPlusWebRTC
 import CallKit
 import PushKit
 
+@available(iOS 13.0, *)
 class CXCallManager: NSObject {
     let client = TPWebRTCClient()
     static let shared = CXCallManager()

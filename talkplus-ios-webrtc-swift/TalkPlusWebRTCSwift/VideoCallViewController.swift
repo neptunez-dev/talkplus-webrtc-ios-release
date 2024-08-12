@@ -4,6 +4,7 @@ import PushKit
 import TalkPlus
 import TalkPlusWebRTC
 
+@available(iOS 13.0, *)
 class VideoCallViewController: UIViewController {
 
     private var client = CXCallManager.shared.client

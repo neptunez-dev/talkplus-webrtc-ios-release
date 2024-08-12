@@ -5,6 +5,7 @@ import TalkPlus
 import TalkPlusWebRTC
 
 @main
+@available(iOS 13.0, *)
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
     private var voipRegistry: PKPushRegistry!
