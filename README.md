@@ -1,14 +1,14 @@
 
-# talkplus-webrtc-ios
+# klat-webrtc-ios
 
 ![Platform](https://img.shields.io/badge/platform-iOS-orange.svg)
 ![Languages](https://img.shields.io/badge/language-Swift-orange.svg)
 ![Languages](https://img.shields.io/badge/language-objc-orange.svg)
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
-## talkplus-webrtc-ios SDK 소개
+## klat-webrtc-ios SDK 소개
 
-iOS용 TalkPlus WebRTC SDK는 Objective-C 언어로 작성되었으며, iOS 클라이언트 앱에 음성 및 영상 통화 기능을 구축하는데 사용할 수 있습니다. 이 저장소에서는 TalkPlus WebRTC SDK를 프로젝트에 구현하기 전에 필요한 몇 가지 절차와 Swift 언어 및 UIKit를 활용하여 작성된 샘플 앱을 찾을 수 있습니다.
+iOS용 Klat WebRTC SDK는 Objective-C 언어로 작성되었으며, iOS 클라이언트 앱에 음성 및 영상 통화 기능을 구축하는데 사용할 수 있습니다. 이 저장소에서는 Klat WebRTC SDK를 프로젝트에 구현하기 전에 필요한 몇 가지 절차와 Swift 언어 및 UIKit를 활용하여 작성된 샘플 앱을 찾을 수 있습니다.
 
 > 다자간 통화(그룹 통화)는 지원되지 않으며, 일대일 (1:1) 통화만 가능합니다.<br/>
 
@@ -16,15 +16,15 @@ iOS용 TalkPlus WebRTC SDK는 Objective-C 언어로 작성되었으며, iOS 클�
 
 ## 요구사항
 
-talkplus-webrtc-ios SDK 사용을 위한 최소 요구사항
-- Xcode 15.0+
+klat-webrtc-ios SDK 사용을 위한 최소 요구사항
+- Xcode 15.3+
 - iOS / iPadOS 12.0+ 설치 된 실제 디바이스 (Physical Device)
-  > 2024년 4월 29일 이후 부터, 애플 앱 스토어에 앱을 제출하려면 Xcode 15.0 이상 버전으로 빌드 및 테스트 필요. 
+  > 2025년 4월 24일부터 앱 스토어 커넥트에 업로드하는 앱은 Xcode 16 이상 버전을 사용하여 빌드해야 합니다. 
 
 
 ## SDK 설치 
 
-talkplus-webrtc-ios SDK는 [CocoaPods](https://cocoapods.org) 또는 [Swift Package Manager](https://swift.org/package-manager/)를 사용하여 설치할 수 있습니다.
+klat-webrtc-ios SDK는 [CocoaPods](https://cocoapods.org) 또는 [Swift Package Manager](https://swift.org/package-manager/)를 사용하여 설치할 수 있습니다.
 
 ### Swift Package Manager
 >1) Xcode에서 아래 메뉴를 클릭합니다.
@@ -64,7 +64,7 @@ $ pod install --repo-update
 ## 의존성 라이브러리 (Dependencies)
 
  - [WebRTC](https://github.com/stasel/WebRTC)
- - [TalkPlus Chat SDK for iOS](https://github.com/adxcorp/talkplus-ios-release)
+ - [Klat Chat SDK for iOS](https://github.com/adxcorp/talkplus-ios-release)
 
  ## iOS 프로젝트 설정
 
@@ -89,9 +89,9 @@ $ pod install --repo-update
 > PushKit 추가 후, [pushRegistry(_:didReceiveIncomingPushWith:for:completion:)](https://developer.apple.com/documentation/pushkit/pkpushregistrydelegate/pushregistry(_:didreceiveincomingpushwith:for:completion:)) 메소드가 호출되면, [reportNewIncomingCall(with:update:completion:)](https://developer.apple.com/documentation/callkit/cxprovider/reportnewincomingcall(with:update:completion:)) 메소드를 호출해야합니다. 그렇지 않으면 `비정상 종료(CRASH)`가 발생할 수 있습니다. PushKit를 통해서 수신된 VoIP 메시지 처리 방법에 관한 추가적인 설명은 아래 링크를 참조하십시오.<br/>
 [PushKit를 통해서 수신된 VoIP Notification 처리](https://developer.apple.com/documentation/pushkit/responding-to-voip-notifications-from-pushkit)
 
-### TalkPlus 애플리케이션 생성
+### Klat 애플리케이션 생성
 
- 1. [TalkPlus 대시보드](https://www.talkplus.io) 로그인 또는 회원 가입.
+ 1. [Klat 대시보드](https://www.klat.kr) 로그인 또는 회원 가입.
  2. Apps > 새로운 앱 만들기' 버튼을 클릭하여 톡플러스 애플리케이션 생성
  3. Apps > [생성된 앱 이름] > Settings > `App ID` 확인
  4. Apps > [생성된 앱 이름] > Settings > `익명 로그인 (Anonymous user)` 활성화
@@ -114,7 +114,7 @@ $ pod install --repo-update
 
 > 앱이 포어그라운드 상태에서는 통화 요청 이벤트(`didReceiveCallIncoming:`)를 직접 수신 할 수 있지만, 앱이 백그라운드 또는 종료된 상태에서는 해당 이벤트를 수신 할 수 없기 때문에 [PushKit](https://developer.apple.com/documentation/pushkit)를 통해서 통화 요청 이벤트를 처리해야합니다.<br/>
 
-통화를 요청하거나 또는 통화를 수신하려면 VoIP Push Token를 아래 메소드를 호출하여 TalkPlus 서버로 전달이 필요합니다. </br> 
+통화를 요청하거나 또는 통화를 수신하려면 VoIP Push Token를 아래 메소드를 호출하여 Klat 서버로 전달이 필요합니다. </br> 
 ```objc
 - (void)registerVoIPPushToken:(NSData *_Nonnull)token
   success:(void (^_Nullable)(void))successBlock
@@ -181,7 +181,7 @@ $ pod install --repo-update
 ```
 
 ```objc
-// VoIP 전용 Push Notification Token를 TalkPlus 서버로 전송
+// VoIP 전용 Push Notification Token를 Klat 서버로 전송
 - (void)registerVoIPPushToken:(NSData *_Nonnull)token
   success:(void (^_Nullable)(void))successBlock
   failure:(void (^_Nonnull)(int errorCode, NSError * _Nullable error))failureBlock;
@@ -216,4 +216,4 @@ Neptune Company
 
 ## 라이선스
 
-talkplus-webrtc-ios SDK는 MIT 라이선스에 따라 사용할 수 있습니다.
+klat-webrtc-ios SDK는 MIT 라이선스에 따라 사용할 수 있습니다.
