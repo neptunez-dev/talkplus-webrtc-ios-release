@@ -17,11 +17,10 @@ let package = Package(
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
-        //.package(url: "https://github.com/adxcorp/talkplus-ios-release.git", from: "0.6.3")
         .package(
             name: "spm-talkplus-framework",
             url: "https://github.com/adxcorp/talkplus-ios-release",
-            from: "0.6.3"
+            from: "1.0.2"
         ),
         .package(url: "https://github.com/stasel/WebRTC.git", .exact("123.0.0"))
     ],
@@ -37,14 +36,9 @@ let package = Package(
                 .product(name: "spm-talkplus-framework", package: "spm-talkplus-framework"),
                 .product(name: "WebRTC", package: "WebRTC"),
             ],
-            path: ".",
+            path: "ios/Dependency",
             exclude: [
-                "talkplus-ios-webrtc-swift/TalkPlusWebRTCSwift/AppDelegate.swift",
-                "talkplus-ios-webrtc-swift/TalkPlusWebRTCSwift/SceneDelegate.swift",
-                "talkplus-ios-webrtc-swift/TalkPlusWebRTCSwift/CXCallManager.swift",
-                "talkplus-ios-webrtc-swift/TalkPlusWebRTCSwift/VideoCallViewController.swift",
-                "talkplus-ios-webrtc-swift/TalkPlusWebRTCSwift/Info.plist",
-                "talkplus-ios-webrtc-swift/TalkPlusWebRTCSwift/TalkPlusWebRTCSwift.entitlements",
+                "../../talkplus-ios-webrtc-swift"
             ]
         ),
     ]
