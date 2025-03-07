@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/TPWebRTCClient.h</key>
 		<data>
-		wy0kg5iu8fpuYgkh3/fz8kPJVLg=
+		/YBSMUv6wqD/9W56Rnyr0lqVUuw=
 		</data>
 		<key>Headers/TalkPlusCall.h</key>
 		<data>
@@ -22,7 +22,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		DIz1k7XIakiAU3XNIAhSUd/r/CE=
+		9+hhWizGPD3fvA7cM9M3FG74SZA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -37,21 +37,13 @@
 	<dict>
 		<key>Headers/TPWebRTCClient.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			wy0kg5iu8fpuYgkh3/fz8kPJVLg=
-			</data>
 			<key>hash2</key>
 			<data>
-			UJdLooPHHC774WDU85lYW8jpvTxtfgm3ARCHfCT7I80=
+			im8FSoMlIwe1rVjKNrqxb/Q1sKLOGgGKjSmdmCpWOgM=
 			</data>
 		</dict>
 		<key>Headers/TalkPlusCall.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			4h1Y01aNd10MNUXAUwGO/G687yQ=
-			</data>
 			<key>hash2</key>
 			<data>
 			tYsgVRVMt8Z8+5JuJWrhrw5pclibMQA3Y+pqQICVDuI=
@@ -59,10 +51,6 @@
 		</dict>
 		<key>Headers/TalkPlusCallParams.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			bq0fuw0gs1Na5g/3ofYCCtrC6So=
-			</data>
 			<key>hash2</key>
 			<data>
 			lBMUWO96NoEVoQLQTSYhWanFmKIEqRkytEQUjiAryP0=
@@ -70,10 +58,6 @@
 		</dict>
 		<key>Headers/frmTalkPlusWebRTC.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			uXlSGPYke+phf55PnYD1Sd/7mdY=
-			</data>
 			<key>hash2</key>
 			<data>
 			bGZFxcAfh41Mi+ncrtEJnG59w6ENInsXR0Ig9ak+Ayg=
@@ -81,10 +65,6 @@
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			pv08G2yx/5lPCqB2b9wOXJi+3Yo=
-			</data>
 			<key>hash2</key>
 			<data>
 			Zm34akOdX/O5Xq3NJhgtmFtn2aPkgQqRwZ12BRD0c2Y=
@@ -92,10 +72,6 @@
 		</dict>
 		<key>PrivacyInfo.xcprivacy</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			rPIbkCRPBmYDJ6WbNj95rPqUxGI=
-			</data>
 			<key>hash2</key>
 			<data>
 			19JHCug43LQo1ppkxLYQcmsrLcebZyhtaeCyDgz5ASk=
