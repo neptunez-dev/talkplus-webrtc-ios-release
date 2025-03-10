@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pOP-1J-lYw">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pOP-1J-lYw">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -37,19 +37,19 @@
                                 <rect key="frame" x="10" y="753" width="373" height="60"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="phone.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="VE9-bF-zrF" userLabel="MakeCall">
-                                        <rect key="frame" x="3" y="6" width="88.666666666666671" height="48.666666666666671"/>
+                                        <rect key="frame" x="3" y="5.6666666666666679" width="88.666666666666671" height="48.666666666666657"/>
                                         <color key="tintColor" systemColor="systemGreenColor"/>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="phone.down.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="vad-0j-Kpi" userLabel="EndCall">
-                                        <rect key="frame" x="95.666666666666686" y="6" width="89" height="48.666666666666671"/>
+                                        <rect key="frame" x="95.666666666666686" y="5.6666666666666679" width="89" height="48.666666666666657"/>
                                         <color key="tintColor" systemColor="systemRedColor"/>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="video.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="hFP-Dd-rrU" userLabel="EnableVideo">
-                                        <rect key="frame" x="188.66666666666666" y="6" width="88.666666666666657" height="48.666666666666671"/>
+                                        <rect key="frame" x="188.66666666666666" y="5.6666666666666679" width="88.666666666666657" height="48.666666666666657"/>
                                         <color key="tintColor" systemColor="systemYellowColor"/>
                                     </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mic.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="gX5-4L-MYY" userLabel="EnableAudio">
-                                        <rect key="frame" x="281.33333333333331" y="6" width="88.666666666666686" height="48.666666666666671"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="microphone.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="gX5-4L-MYY" userLabel="EnableAudio">
+                                        <rect key="frame" x="281.33333333333331" y="5.6666666666666679" width="88.666666666666686" height="48.666666666666657"/>
                                         <color key="tintColor" systemColor="systemTealColor"/>
                                     </imageView>
                                 </subviews>
@@ -94,7 +94,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="mic.circle.fill" catalog="system" width="128" height="123"/>
+        <image name="microphone.circle.fill" catalog="system" width="128" height="123"/>
         <image name="phone.circle.fill" catalog="system" width="128" height="123"/>
         <image name="phone.down.circle.fill" catalog="system" width="128" height="123"/>
         <image name="video.circle.fill" catalog="system" width="128" height="123"/>
@@ -102,13 +102,13 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGreenColor">
-            <color red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemTealColor">
-            <color red="0.18823529410000001" green="0.69019607839999997" blue="0.78039215689999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
