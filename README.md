@@ -106,6 +106,7 @@ $ pod install --repo-update
 
      > 만약 두 대의 디바이스가 있다면, 첫 번째 디바이스에는 `test1`라는 유저 식별자를 사용하여 앱을 실행하고, 두 번째 디바이스에서는 유저 식별자 값을 `test2`로 변경하여 앱을 실행.
  4. `VideoCallViewController.swift` 파일 > `didTapMakeCall(_:)` 메소드 > `YOUR_CHANNEL_ID` 문자열을 위의 이전 단계에서 생성한 `Channel ID`로 교체.
+     > 통화 발신자, 수신자 모두 같은 채널에 이미 조인되어 있어야 통화가 가능합니다.
 
 
 ### VoIP 전용 인증서 및 Push Token 
