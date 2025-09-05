@@ -131,6 +131,7 @@ $ pod install --repo-update
 3) `Certificate +` 버튼 클릭
 4) `Services`에서 `VoIP Services Certificate` 선택 후, `Continue` 버튼 클릭
 5) VoIP 서비스가 추가될 `App ID (Bundle ID)` 선택 후, `Continue` 버튼 클릭
+> 이 단계에서 선택한 `App ID (Bundle ID)` 를 대상으로만 VoIP Push가 발송되므로, 적용하려는 iOS 앱의 Bundle ID와 동일한지 확인하십시오.
 6) MacOS 키체인 접근 (Keychain Access)를 실행 > `키체인 접근 - 인증서 지원 - 인증 기관에서 인증서 요청` 메뉴를 통하여 `Certificate Signing Request (CSR)` 파일 생성 
 7) 생성된 CSR 파일 업로드 후, `Continue` 버튼 클릭
 8) `Certificate Type`이 `VoIP Services`라고 표시되어 있는지 확인 후, `Download` 버튼을 클릭하여 인증서 다운로드
