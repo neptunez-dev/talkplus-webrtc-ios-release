@@ -16,6 +16,7 @@
 		27D382A82BDF9317001F6105 /* TalkPlusWebRTC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27D382A72BDF9317001F6105 /* TalkPlusWebRTC.framework */; };
 		27D382AC2BDF94EE001F6105 /* CXCallManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D382AB2BDF94EE001F6105 /* CXCallManager.swift */; };
 		27D382B02BDF98A0001F6105 /* VideoCallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D382AF2BDF98A0001F6105 /* VideoCallViewController.swift */; };
+		DF38F5402E6FB93A00AF1410 /* spm-talkplus-webrtc-framework in Frameworks */ = {isa = PBXBuildFile; productRef = DF38F53F2E6FB93A00AF1410 /* spm-talkplus-webrtc-framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 			files = (
 				27D382A42BDF9309001F6105 /* TalkPlus.framework in Frameworks */,
 				27D382A82BDF9317001F6105 /* TalkPlusWebRTC.framework in Frameworks */,
+				DF38F5402E6FB93A00AF1410 /* spm-talkplus-webrtc-framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,6 +134,9 @@
 				Base,
 			);
 			mainGroup = 27D382822BDF8DB0001F6105;
+			packageReferences = (
+				DF38F53E2E6FB93A00AF1410 /* XCRemoteSwiftPackageReference "talkplus-webrtc-ios-release" */,
+			);
 			productRefGroup = 27D3828C2BDF8DB0001F6105 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -399,6 +404,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DF38F53E2E6FB93A00AF1410 /* XCRemoteSwiftPackageReference "talkplus-webrtc-ios-release" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/neptunez-dev/talkplus-webrtc-ios-release.git";
+			requirement = {
+				kind = exactVersion;
+				version = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DF38F53F2E6FB93A00AF1410 /* spm-talkplus-webrtc-framework */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DF38F53E2E6FB93A00AF1410 /* XCRemoteSwiftPackageReference "talkplus-webrtc-ios-release" */;
+			productName = "spm-talkplus-webrtc-framework";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 27D382832BDF8DB0001F6105 /* Project object */;
 }
