@@ -76,9 +76,31 @@ extension AppDelegate: PKPushRegistryDelegate {
         didReceiveIncomingPushWith payload: PKPushPayload,
         for type: PKPushType, completion: @escaping () -> Void
     ) {
+        guard type == .voIP else {
+            print("\(#function), push type is not VoIP.")
+            return
+        }
+        
         print("\(#function), dictionaryPayload : \(payload.dictionaryPayload)")
-        guard type == .voIP else { return }
         CXCallManager.shared.client.voipPushRegistry(payload.dictionaryPayload)
+        
+        guard let callerId = payload.dictionaryPayload["callerId"] as? String else { return }
+        guard let calleeId = payload.dictionaryPayload["calleeId"] as? String else { return }
+        guard let uuid = payload.dictionaryPayload["uuid"] as? String else { return }
+        guard let channelId = payload.dictionaryPayload["channelId"] as? String else { return }
+        
+        let call = TalkPlusCall(channelId, callerId: callerId, calleeId: calleeId, uuidString: uuid)
+        let update = CXCallUpdate()
+        update.remoteHandle = CXHandle(type: .generic, value: "Call from \(call.callerId)")
+        update.localizedCallerName = "Call from \(call.callerId)"
+        update.hasVideo = true
+        /*
+         pushRegistry(_:didReceiveIncomingPushWith:for:completion:) 메소드가 호출되었는데,
+         reportNewIncomingCall(with:update:completion:)를 호출하지 않으면
+         iOS가 앱을 강제로 종료하고 (Crash 발생), 이후부터는 보안 정책 때문에 더 이상 VoIP 푸시를 해당 앱에 전달하지 않게 됩니다.
+         이후 시스템은 앱을 더 이상 Wake Up 하지 않습니다.
+        */
+        CXCallManager.shared.reportIncomingCall(with: call.uuid, update: update)
         completion()
     }
 }

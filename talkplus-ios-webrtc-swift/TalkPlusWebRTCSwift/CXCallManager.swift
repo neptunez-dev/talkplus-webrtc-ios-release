@@ -50,8 +50,19 @@ extension CXCallManager {
                             update: CXCallUpdate,
                             completionHandler: ((Error?) -> Void)? = nil)
     {
-        print("\(#function) reportIncomingCall")
         self.provider.reportNewIncomingCall(with: callID, update: update) { (error) in
+            if let error = error as? CXErrorCodeIncomingCallError {
+                switch error.code {
+                case .callUUIDAlreadyExists:
+                    print("\(#function), Call already exists")
+                default:
+                    print("\(#function), CallKit error: \(error)")
+                }
+            } else if let error = error {
+                print("\(#function), other error: \(error.localizedDescription)")
+            } else {
+                print("\(#function), incoming call reported successfully")
+            }
             completionHandler?(error)
         }
     }

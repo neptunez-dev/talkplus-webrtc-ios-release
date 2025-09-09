@@ -90,3 +90,4 @@ iOSInjectionProject/
 # End of https://www.toptal.com/developers/gitignore/api/swift
 *.resolved
 .swiftpm
+talkplus-ios-webrtc-swift/Podfile.lock
