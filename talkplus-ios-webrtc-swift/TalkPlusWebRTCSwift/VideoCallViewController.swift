@@ -158,6 +158,11 @@ extension VideoCallViewController: TPWebRTCClientDelegate {
     
     func didReceiveCallIncoming(_ call: TalkPlusCall) {
         print("\(#function), VideoCallViewController, didReceiveCallIncoming, call from \(call.callerId)")
+        let update = CXCallUpdate()
+        update.remoteHandle = CXHandle(type: .generic, value: "Call from \(call.callerId)")
+        update.localizedCallerName = "Call from \(call.callerId)"
+        update.hasVideo = true
+        CXCallManager.shared.reportIncomingCall(with: call.uuid, update: update)
     }
     
     func didReceiveCallConnect(_ call: TalkPlusCall) {
